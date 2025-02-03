@@ -42,7 +42,8 @@ html {
 }
 body {
     background-color: var(--drk-bg-color);
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: var(--primary-txt)
 }
 img, picture, video, canvas, svg {
