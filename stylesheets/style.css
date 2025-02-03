@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
-    padding: 0;
-} 
+}
 :root {
     /* Color Theme */
-    --primary-color: #27170e;
-    --secondary-color: #110905;
-    --txt: white;
-    --txt2: #726969;
+    --main-theme: #b71234;
+    --dark-main-theme: #710033;
+    --primary-txt: white;
+    --secondary-txt: rgb(75, 78, 94);
+    --drk-bg-color: rgb(17, 11, 19);
+    --vanilla1: rgb(105, 87, 93);
+    --vanilla2: rgb(141, 116, 124);
 
     /* Sizes */
     --size-xss: 0.5rem;
@@ -26,218 +29,70 @@
     --size-9xl: 8rem;
     --size-10xl: 10rem;
 }
+html {
+    scroll-behavior: smooth;
+}
+.light-mode {
+    --primary-txt: rgb(17, 11, 19);
+    --secondary-txt: rgb(75, 78, 94);
+    background-color: white;
+    --vanilla1: rgb(17, 11, 19);
+    --vanilla2: rgb(51, 37, 50);
+    --drk-bg-color: white;
+}
+body {
+    background-color: var(--drk-bg-color);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: var(--primary-txt);
+}
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    user-select: none;
+}
 .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid #b71234;
+    /* border: 1px solid #b71234; */
     /* The CSS rule above is ONLY for
     viewing the container class! */
 }
-html {
-    scroll-behavior: smooth;
+.section {
+    margin-top: 5rem;
 }
-body {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    background: linear-gradient(to right, #27170e, black,
-    #27170e);
-    color: var(--txt2);
-    width: 100%;
-}
-.home {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.remove-btn {
-    display: block;
-    background-color: transparent;
-    border: none;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
-.logo {
-    margin-left: auto;
-    width: 150px;
-}
-.gradient {
-    background: linear-gradient(to right, var(--txt2),
-    #74452e);
-    display: inline;
-    background-clip: text;
-    color: transparent
-}
-.header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.header-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    gap: 2em;
-    margin-top: .7em;
-}
-.header-link {
+.btns {
     font-size: var(--size-xs);
     text-decoration: none;
-    color: var(--txt2);
-}
-.header-link:hover {
-    color: var(--txt);
-}
-.header-menu {
-    display: none;
-}
-#header-bars {
-    color: var(--txt2);
-    font-size: var(--size-2xl);;
-    display: block;
-    align-items: flex-end;
-}
-#mobile-nav a {
-    font-size: var(--size-base);
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(to right, #3f281b, #0c0805,
-    #3f281b);
-    height: 110px;
-    padding-bottom: 150px;
-}
-#top-icon {
-    position: absolute;
-    margin-top: -5rem;
-}
-#hours-location {
     display: inline-block;
-    padding: 8px 16px;
-    background-color: #3a3133;
-    border-radius: 4px;
-    color: #bdbdbd;
-    margin-top: 16px;
-} 
-#github, #gmail, #instagram {
-    margin: 20px;
-    margin-top: 25px;
-    background-color: #3a3133;
-    width: 50px;
-    padding: 10px;
-    border-radius: 90px;
+    font-weight: 700;
+    background-color: var(--main-theme);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px var(--main-theme),
+    0 6px 6px var(--main-theme), 0 0 100px -10px pink;
+    transition: transform .3s;
 }
-#hours-location:hover, #github:hover,
-#gmail:hover, #instagram:hover {
-    background-color: #4b4244;
+.btns:hover {
+    transform: translateY(-3px);
 }
-.footer a {
-    text-decoration: none;
-} 
-#footer-title {
-    color: var(--txt2);
-    font-weight: normal;
-    font-size: var(--size-base);
-    margin-top: 10px;
+.btns:active {
+    background-color: #710033;
+    box-shadow: 0 10px 20px var(--dark-main-theme),
+    0 6px 6px var(--dark-main-theme), 0 0 100px -10px rgb(212, 150, 184);
 }
-@keyframes opacity {
-    100% {opacity: 0;};
+strong {
+    color: var(--main-theme);
 }
-
-/* xxs = (extra extra small) */
-@media (min-width: 320px) {
-    .container {
-        max-width: 320px;
-    }
-    .section {
-        margin-top: 5rem;
-    }
-    .logo {
-        width: 150px;
-        position: absolute;
-        margin-top: 35px;
-        margin-left: 50px;
-    }
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
 }
-
-/* xs = (extra small) */
-@media (min-width: 475px) {
-    .container {
-        max-width: 475px;
-    }
-    .section {
-        margin-top: 5rem;
-    }
-    .logo {
-        width: 150px;
-        position: absolute;
-        margin-top: 35px;
-        margin-left: 50px;
-    }
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-theme);
 }
-
-/* sm = (small) */
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
-    .section {
-        margin-top: 5rem;
-    }
-}
-
-/* md = (medium) */
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-    .section {
-        margin-top: 5rem;
-    }
-    .header-menu {
-        display: flex;
-        padding: 0;
-        gap: 2em;
-    }
-    #header-bars {
-        display: none;
-    }
-}
-
-/* lg = (large) */
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
-    .header-link {
-        font-size: var(--size-sm);
-    }
-} 
-
-/* xl = (extra large) */
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-    .section {
-        margin-top: 5rem;
-    }
-}
-
-/* 2xl = (two extra large) */
-@media (min-width: 1536px) {
-    .container {
-        max-width: 1526px;
-    }
-    .section {
-        margin-top: 5rem;
-    }
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--dark-main-theme);
 }
