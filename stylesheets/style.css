@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+}
+:root {
+    /* Color Theme */
+    --main-theme: #b71234;
+    --dark-main-theme: #710033;
+    --primary-txt: white;
+    --secondary-txt: rgb(75, 78, 94);
+    --drk-bg-color: rgb(17, 11, 19);
+    --vanilla1: rgb(105, 87, 93);
+    --vanilla2: rgb(141, 116, 124);
+
+    /* Sizes */
+    --size-xss: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+.light-mode {
+    --primary-txt: rgb(17, 11, 19);
+    --secondary-txt: rgb(75, 78, 94);
+    background-color: white;
+    --vanilla1: rgb(17, 11, 19);
+    --vanilla2: rgb(51, 37, 50);
+    --drk-bg-color: white;
+}
+body {
+    background-color: var(--drk-bg-color);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: var(--primary-txt)
+}
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    user-select: none;
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* border: 1px solid #b71234; */
+    /* The CSS rule above is ONLY for
+    viewing the container class! */
+}
+.section {
+    margin-top: 5rem;
+}
+.btns {
+    font-size: var(--size-xs);
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    background-color: var(--main-theme);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px var(--main-theme),
+    0 6px 6px var(--main-theme), 0 0 100px -10px pink;
+    transition: transform .3s;
+}
+.btns:hover {
+    transform: translateY(-3px);
+}
+.btns:active {
+    background-color: #710033;
+    box-shadow: 0 10px 20px var(--dark-main-theme),
+    0 6px 6px var(--dark-main-theme), 0 0 100px -10px rgb(212, 150, 184);
+}
+strong {
+    color: var(--main-theme);
+}
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-theme);
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--dark-main-theme);
+}
