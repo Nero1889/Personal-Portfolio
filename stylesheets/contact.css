@@ -18,6 +18,30 @@
 .contact-btn {
     font-size: var(--size-sm);
 }
+.contact-img {
+    width: 2rem;
+}
+.contact-links {
+    word-spacing: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.contact-links a {
+    color: var(--secondary-txt);
+    text-decoration: none;
+    transition: color .5s;
+}
+.contact-links a:hover {
+    color: var(--txt);
+}
+
 /* xs = (extra small) */
 @media (min-width: 475px) {
     .contact {
