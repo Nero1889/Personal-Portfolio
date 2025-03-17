@@ -1,9 +1,7 @@
 const THEME_TOGGLE_BTNS = document.querySelectorAll(".theme-toggle");
 const CURRENT_THEME = localStorage.getItem("theme");
 
-if (CURRENT_THEME === "light") {
-    document.body.classList.add("light-mode");
-}
+if (CURRENT_THEME === "light") document.body.classList.add("light-mode");
 
 THEME_TOGGLE_BTNS.forEach(btn => {
     btn.addEventListener("click", () => {
