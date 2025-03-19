@@ -27,7 +27,7 @@
     margin-left: -2vh;
 }
 .mobile-link {
-    font-size: var(--size-sm);
+    font-size: var(--size-lg);
     text-decoration: none;
     font-weight: 600;
     color: var(--secondary-txt);
@@ -47,9 +47,8 @@
 }
 #mobile-sun {
     display: block;
-    width: var(--size-2xl);
-    height: var(--size-2xl);
     color: var(--secondary-txt);
+    font-size: var(--size-2xl);
 }
 .remove-btn, #mobile-sun{
     display: block;
