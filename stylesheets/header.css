@@ -45,6 +45,9 @@
     .header-link:active {
         color: var(--dark-main-theme);
     }
+    #resume-btn {
+        font-size: var(--size-sm);
+    }
     #header-line {
         border: 1px solid var(--main-theme);
         padding-top: 1.5em;
