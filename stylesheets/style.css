@@ -86,7 +86,6 @@ img, picture, video, canvas, svg {
 strong {
     color: var(--main-theme);
 }
-/* Custom Scrollbar */
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -95,4 +94,11 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-thumb:active {
     background-color: var(--dark-main-theme);
+}
+.loading {
+    filter: blur(40px) grayscale(100%);
+}
+.loaded {
+    filter: blur(0) grayscale(0);
+    transition: 0.7s ease-in-out;
 }
