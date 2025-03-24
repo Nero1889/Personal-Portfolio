@@ -7,10 +7,10 @@
     --main-theme: #b71234;
     --dark-main-theme: #710033;
     --primary-txt: white;
-    --secondary-txt: rgb(75, 78, 94);
-    --drk-bg-color: rgb(17, 11, 19);
-    --vanilla1: rgb(105, 87, 93);
-    --vanilla2: rgb(141, 116, 124);
+    --secondary-txt: #475569;
+    --drk-bg-color: #070a13;
+    --slate1: #1e293b;
+    --slate2: #94a3b8;
 
     /* Sizes */
     --size-xss: 0.5rem;
@@ -36,8 +36,8 @@ html {
     --primary-txt: rgb(17, 11, 19);
     --secondary-txt: rgb(75, 78, 94);
     background-color: white;
-    --vanilla1: rgb(17, 11, 19);
-    --vanilla2: rgb(51, 37, 50);
+    --slate1: rgb(17, 11, 19);
+    --slate2: #1e293b;
     --drk-bg-color: white;
 }
 body {
@@ -63,25 +63,26 @@ img, picture, video, canvas, svg {
     margin-top: 5rem;
 }
 .btns {
-    font-size: var(--size-xs);
-    text-decoration: none;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 600;
+    text-decoration: none;
     background-color: var(--main-theme);
     color: white;
     padding: 0.5em 1em;
     border-radius: 7px;
-    box-shadow: 0 10px 20px var(--main-theme),
-    0 6px 6px var(--main-theme), 0 0 100px -10px pink;
-    transition: transform .3s;
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
+    0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px
+    var(--main-theme);
+    transition: transform .3s, box-shadow 0.3s;
 }
 .btns:hover {
     transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
+    0 10px 10px rgba(225, 29, 72, 0.22), 0 0 125px -10px
+    var(--main-theme);
 }
 .btns:active {
     background-color: #710033;
-    box-shadow: 0 10px 20px var(--dark-main-theme),
-    0 6px 6px var(--dark-main-theme), 0 0 100px -10px rgb(212, 150, 184);
 }
 strong {
     color: var(--main-theme);
