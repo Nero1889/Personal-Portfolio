@@ -29,6 +29,10 @@
     left: 0;
     z-index: 1;
     transition: background-color 0.3s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    animation-range: entry 0% cover 40%;
 }
 .work-img-wrapper:hover::after {
     background-color: #b7125711;
@@ -41,12 +45,20 @@
     color: var(--secondary-txt);
     margin: 1rem 0;
     line-height: 1.5rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    animation-range: entry 0% cover 40%;
 }
 #work-project-desc2 {
     font-size: var(--size-sm);
     margin-bottom: 1rem;
     line-height: 1.5rem;
     color: var(--slate2);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    animation-range: entry 0% cover 40%;
 }
 #work-project-btn {
     font-size: var(--size-sm);
