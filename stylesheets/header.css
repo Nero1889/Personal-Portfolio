@@ -17,11 +17,12 @@
     position: absolute;
     margin-left: 2vh;
 }
-.remove-btn, #header-bars{
+.remove-btn, #header-bars {
     display: block;
     background-color: transparent;
     border: none;
 }
+
 /* md = (medium) */
 @media (min-width: 768px) {
     .header-menu {
@@ -40,7 +41,7 @@
     }
     .header-link:hover {
         color: var(--main-theme);
-        transition: color 0s;
+        transition: color 0.3s;
     }
     .header-link:active {
         color: var(--dark-main-theme);
@@ -64,13 +65,16 @@
         display: none;
     }
 }
+
 /* lg = (large)  */
 @media (min-width: 1024px) {
     .header-link {
         font-size: var(--size-sm);
     }
     #sun {
-        width: var(--size-xl);
-        height: var(--size-xl);
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+        display: block;
+        margin-top: .25rem;
     }
 }
