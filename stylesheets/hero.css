@@ -14,15 +14,16 @@
     height: 10rem
 }
 #hero-subtitle {
-    color: var(--vanilla1);
+    color: var(--slate1);
     font-size: var(--size-base);
     line-height: .9;
 }
 #hero-title {
-    color: var(--vanilla2);
+    color: var(--slate2);
     text-transform: uppercase;
     font-size: var(--size-4xl);
     line-height: 0.9;
+    font-weight: 800;
 }
 #hero-desc {
     max-width: 60ch;
@@ -59,6 +60,7 @@
         font-size: var(--size-base);
     }
 }
+
 /* lg = (large)  */
 @media (min-width: 1024px) {
     #hero-img {
@@ -78,6 +80,7 @@
         font-size: var(--size-lg);
     }
 }
+
 /* xl = (extra large) */
 @media (min-width: 1280px) {
     .hero {
