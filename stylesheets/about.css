@@ -11,16 +11,13 @@
 #about-title {
     font-size: var(--size-2xl);
 }
-#about-content p {
-    line-height: 1.5;
-}
 .about-desc {
     max-width: 60ch;
     font-size: var(--size-sm);
     color: var(--secondary-txt);
 }
 #about-hr {
-    border-color: var(--main-theme);
+    border-color: var(--secondary-txt);
 }
 #about-subtitle {
     font-size: var(--size-sm);
