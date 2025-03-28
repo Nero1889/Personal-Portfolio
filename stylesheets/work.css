@@ -9,7 +9,6 @@
     font-size: var(--size-sm);
     color: var(--secondary-txt);
     margin: 1rem auto;
-    line-height: 1.5rem;
 }
 #work-project-title {
     font-size: var(--size-base);
@@ -44,7 +43,6 @@
     font-size: var(--size-sm);
     color: var(--secondary-txt);
     margin: 1rem 0;
-    line-height: 1.5rem;
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0;
@@ -53,7 +51,6 @@
 #work-project-desc2 {
     font-size: var(--size-sm);
     margin-bottom: 1rem;
-    line-height: 1.5rem;
     color: var(--slate2);
     animation: appear linear;
     animation-timeline: view();
