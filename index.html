@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Portfolio</title>
+    <link rel="icon" href="images/ViteLogo.png">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="stylesheet" href="stylesheets/utilis.css">
@@ -55,8 +56,13 @@
     <main>
         <section class="hero container">
             <img id="hero-img" src="images/selfImage.jpg" alt="Profile Picture">
-            <h2 id="hero-subtitle">Hi, I'm Raul</h2>
-            <h1 id="hero-title">Front-End <br> Web Developer</h1>
+            <h2 id="hero-subtitle">Hi, I'm Raul!</h2>
+            <!-- Front-End Web Developer -->
+            <h1 id="hero-title">
+                <span>F</span><span>R</span><span>O</span><span>N</span><span>T</span><span>-</span><span>E</span><span>N</span><span>D</span>
+                <br><span>W</span><span>E</span><span>B</span>
+                <span>D</span><span>E</span><span>V</span><span>E</span><span>L</span><span>O</span><span>P</span><span>E</span><span>R</span>
+            </h1>
             <p id="hero-desc">A creative <strong>Web Developer</strong>, facinated by
                 <strong>Computer Science,</strong> determined to build amazing and
                 dynamic websites from start to launch!
@@ -79,16 +85,17 @@
                     and determination!
                 </p>
                 <hr id="about-hr">
-                <h3 id="about-subtitle">Technologies</h3>
+                <h3 id="about-subtitle">Skills:</h3>
                 <div id="about-ul-container">
                     <ul id="about-ul">
-                        <li class="about-list">Visual Studio Code</li>
                         <li class="about-list">HTML5</li>
-                        <li class="about-list">CSS</li>
+                        <li class="about-list">CSS3</li>
+                        <li class="about-list">JavaScript (ES6+)</li>
                     </ul>
                     <ul id="about-ul">
-                        <li class="about-list">JavaScript (ES6+)</li>
-                        <li class="about-list">(New to React.js!)</li>
+                        <li class="about-list">(New) React</li>
+                        <li class="about-list">(New) TypeScript</li>
+                        <li class="about-list">Figma</li>
                     </ul>
                 </div>
             </div>
@@ -98,6 +105,13 @@
                 Picture" class="lazy loading">
             </div>
         </section>
+        <div id="langs">
+            <img class="lang-img" src="images/HTML5.png" alt="HTML Logo">
+            <img class="lang-img" src="images/CSS3.png" alt="CSS Logo">
+            <img class="lang-img" src="images/JavaScript.png" alt="JavaScript Logo">
+            <img class="lang-img" src="images/React.png" alt="React Logo">
+            <img class="lang-img" src="images/Figma.png" alt="Figma Logo">
+        </div>
         <section id="work" class="work container section">
             <h2 id="work-title">Projects</h2>
             <p id="work-desc">Here are some of the projects I've recently worked on from
@@ -179,7 +193,7 @@
             </a>
             <div class="contact-links">
                 <div class="sub-container">
-                    <img class="contact-img" src="images/github.png" alt="GitHub Logo">
+                    <img class="contact-img" id="github" src="images/github.png" alt="GitHub Logo">
                     <a href="https://github.com/Nero1889" target="_blank">GitHub</a>
                 </div>
                 <div class="sub-container">
