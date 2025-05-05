@@ -11,7 +11,7 @@
     display: inline;
     border-radius: 50%;
     width: 10rem;
-    height: 10rem
+    height: 10rem;
 }
 #hero-subtitle {
     color: var(--slate1);
@@ -24,12 +24,19 @@
     font-size: var(--size-4xl);
     line-height: 0.9;
     font-weight: 800;
+    letter-spacing: -.25rem;
+    position: relative;
+}
+#hero-title span {
+    display: inline-block;
+    position: relative;
+    opacity: 0; 
+    transform-origin: center center;
 }
 #hero-desc {
     max-width: 60ch;
     font-size: var(--size-sm);
     color: var(--secondary-txt);
-    line-height: 1.5;
 }
 #hero-desc strong {
     color: var(--main-theme)
@@ -55,6 +62,7 @@
     }
     #hero-desc {
         font-size: var(--size-base);
+        width: 50ch;
     }
     #hero-btn {
         font-size: var(--size-base);
@@ -75,6 +83,7 @@
     }
     #hero-desc {
         font-size: var(--size-lg);
+        width: auto;
     }
     #hero-btn {
         font-size: var(--size-lg);
