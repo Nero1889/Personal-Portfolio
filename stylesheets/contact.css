@@ -22,20 +22,23 @@
 }
 .contact-links {
     word-spacing: 2rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     display: flex;
     gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 .sub-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
+    flex-direction: column;
 }
 .contact-links a {
     color: var(--secondary-txt);
     text-decoration: none;
-    transition: color .5s;
+    transition: color .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 .contact-links a:hover {
     color: var(--txt);
