@@ -7,3 +7,8 @@
     user-select: none;
     margin-bottom: 40px;
 }
+#github {
+    background-color: var(--secondary-txt);
+    border-radius: 50px;
+    padding: 2px;
+}
