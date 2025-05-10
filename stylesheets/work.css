@@ -41,7 +41,7 @@
 }
 #work-project-desc1 {
     font-size: var(--size-sm);
-    color: var(--secondary-txt);
+    color: var(--slate2);
     margin: 1rem 0;
     animation: appear linear;
     animation-timeline: view();
@@ -51,7 +51,7 @@
 #work-project-desc2 {
     font-size: var(--size-sm);
     margin-bottom: 1rem;
-    color: var(--slate2);
+    color: var(--secondary-txt);
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0;
