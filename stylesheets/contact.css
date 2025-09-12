@@ -8,10 +8,11 @@
 }
 #contact-title {
     font-size: var(--size-2xl);
+    color: var(--white);
 }
 #contact-desc {
     font-size: var(--size-sm);
-    color: var(--secondary-txt);
+    color: var(--slate-600);
     max-width: 60ch;
 }
 .contact-btn {
@@ -32,7 +33,7 @@
     flex-direction: column;
 }
 .contact-links a {
-    color: var(--secondary-txt);
+    color: var(--slate-600);
     text-decoration: none;
     transition: color .3s;
     display: flex;
