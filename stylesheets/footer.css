@@ -1,14 +1,14 @@
 #footer-title {
     font-size: var(--size-xs);
     font-weight: 400;
-    color: var(--secondary-txt);
+    color: var(--slate-600);
     text-align: center;
     letter-spacing: 0.1em;
     user-select: none;
     margin-bottom: 40px;
 }
 #github {
-    background-color: var(--secondary-txt);
+    background-color: var(--slate-600);
     border-radius: 50px;
     padding: 2px;
 }
