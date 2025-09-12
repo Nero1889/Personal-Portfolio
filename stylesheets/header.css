@@ -12,8 +12,8 @@
     margin-left: 1vh;
 }
 #header-bars {
-    color: var(--secondary-txt);
-    font-size: 1.5em;
+    width: var(--size-3xl);
+    height: var(--size-3xl);
     position: absolute;
     margin-left: 2vh;
 }
@@ -35,35 +35,33 @@
     .header-link {
         font-size: var(--size-xs);
         text-decoration: none;
-        font-weight: 700;
-        color: var(--secondary-txt);
+        font-weight: 650;
+        color: var(--slate-600);
         transition: color .2s;
         letter-spacing: -0.05rem;
     }
     .header-link:hover {
-        color: var(--main-theme);
-        transition: color 0.3s;
+        color: var(--main);
+        transition: color 0.25s;
     }
     .header-link:active {
-        color: var(--dark-main-theme);
+        color: var(--dark-main);
     }
     #resume-btn {
         font-size: var(--size-sm);
     }
     #header-line {
-        border: 1px solid var(--main-theme);
+        border: 1px solid var(--main);
         padding-top: 1.5em;
-    }
-    .header-menu button {
-        display: block;
-        background-color: transparent;
-        color: var(--secondary-txt);
-        font-size: 1em;
-        border: none;
-        cursor: pointer;
     }
     #header-bars {
         display: none;
+    }
+    #sun {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+        display: block;
+        margin-top: .25rem;
     }
 }
 
@@ -71,11 +69,5 @@
 @media (min-width: 1024px) {
     .header-link {
         font-size: var(--size-sm);
-    }
-    #sun {
-        width: var(--size-3xl);
-        height: var(--size-3xl);
-        display: block;
-        margin-top: .25rem;
     }
 }
