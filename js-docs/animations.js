@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const LETTERS = HERO_TITLE.querySelectorAll("span");
   
     LETTERS.forEach((letter) => {
-        const X = (Math.random() - 0.5) * 40;
-        const Y = (Math.random() - 0.5) * 40;
+        const X = (Math.random() - 0.5) * 25;
+        const Y = (Math.random() - 0.5) * 34;
         const ROTATION = (Math.random() - 0.5) * 360;
         const DELAY = Math.random() * 325;
   
@@ -33,4 +33,4 @@ const OBSERVER = new IntersectionObserver((entries, observer) => {
     });
 });
     
-LAZY_IMG.forEach((img) => OBSERVER.observe(img)); 
+LAZY_IMG.forEach((img) => OBSERVER.observe(img));
