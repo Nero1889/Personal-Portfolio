@@ -14,12 +14,12 @@
     height: 10rem;
 }
 #hero-subtitle {
-    color: var(--slate1);
+    color: var(--slate-800);
     font-size: var(--size-base);
     line-height: .9;
 }
 #hero-title {
-    color: var(--slate2);
+    color: var(--slate-400);
     text-transform: uppercase;
     font-size: var(--size-4xl);
     line-height: 0.9;
@@ -36,10 +36,7 @@
 #hero-desc {
     max-width: 60ch;
     font-size: var(--size-sm);
-    color: var(--secondary-txt);
-}
-#hero-desc strong {
-    color: var(--main-theme)
+    color: var(--slate-600);
 }
 #hero-btn {
     font-size: var(--size-sm);
