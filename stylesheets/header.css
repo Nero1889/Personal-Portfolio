@@ -43,7 +43,7 @@
         color: var(--dark-main);
     }
     .resume-btn {
-        font-size: var(--size-sm);
+        font-size: var(--size-xs);
     }
     #header-line {
         border: 1px solid var(--main);
@@ -63,6 +63,9 @@
 /* lg = (large)  */
 @media (min-width: 1024px) {
     .header-link {
+        font-size: var(--size-sm);
+    }
+    .resume-btn {
         font-size: var(--size-sm);
     }
 }
