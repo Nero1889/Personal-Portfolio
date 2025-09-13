@@ -9,18 +9,13 @@
 }
 .header-menu {
     display: none;
-    margin-left: 1vh;
+    margin-left: 3.4rem;
 }
 #header-bars {
     width: var(--size-3xl);
     height: var(--size-3xl);
-    position: absolute;
-    margin-left: 2vh;
-}
-.remove-btn, #header-bars {
-    display: block;
-    background-color: transparent;
-    border: none;
+    position: relative;
+    left: 3.4rem;
 }
 
 /* md = (medium) */
@@ -47,7 +42,7 @@
     .header-link:active {
         color: var(--dark-main);
     }
-    #resume-btn {
+    .resume-btn {
         font-size: var(--size-sm);
     }
     #header-line {
@@ -69,5 +64,12 @@
 @media (min-width: 1024px) {
     .header-link {
         font-size: var(--size-sm);
+    }
+}
+
+/* xl = (extra large) */
+@media (min-width: 1280px) {
+    .header-menu {
+        margin-left: 7rem;
     }
 }
