@@ -16,6 +16,7 @@
     height: var(--size-3xl);
     position: relative;
     left: 3.4rem;
+    cursor: pointer;
 }
 
 /* md = (medium) */
@@ -57,6 +58,7 @@
         height: var(--size-2xl);
         display: block;
         margin-top: .25rem;
+        cursor: pointer;
     }
 }
 
