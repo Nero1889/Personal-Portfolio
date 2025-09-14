@@ -50,6 +50,7 @@
     font-size: var(--size-2xl);
     width: var(--size-3xl);
     height: var(--size-3xl);
+    cursor: pointer;
 }
 #mobile-sun {
     display: block;
