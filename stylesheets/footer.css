@@ -12,3 +12,9 @@
     border-radius: 50px;
     padding: 2px;
 }
+.sub-container {
+    font-weight: 650;
+}
+.sub-container a:hover {
+    color: var(--main);
+}
