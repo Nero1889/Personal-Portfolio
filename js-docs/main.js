@@ -1,6 +1,6 @@
 const HEADER_BARS = document.querySelector("#header-bars");
 const MOBILE_NAV = document.querySelector("#mobile-nav");
-const MOBILE_LINKS = document.querySelector(".mobile-link");
+const MOBILE_LINKS = document.querySelectorAll(".mobile-link");
 const MENU_ICON = "images/menu.png";
 const CLOSE_ICON = "images/close.png";
 let isMobileNavOpen = false;
