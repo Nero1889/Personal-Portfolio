@@ -18,32 +18,6 @@
 .contact-btn {
     font-size: var(--size-sm);
 }
-.contact-img {
-    width: 2rem;
-}
-.contact-links {
-    word-spacing: 2rem;
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-}
-.sub-container {
-    display: flex;
-    flex-direction: column;
-}
-.contact-links a {
-    color: var(--slate-600);
-    text-decoration: none;
-    transition: color .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-.contact-links a:hover {
-    color: var(--txt);
-}
 
 /* xs = (extra small) */
 @media (min-width: 475px) {
