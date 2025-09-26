@@ -29,7 +29,7 @@
     margin: 0 .5rem;
 }
 .service-card {
-    background-color: var(--services-bx);
+    background-color: var(--bx);
     display: flex;
     flex-direction: column;
     padding: 25px;
