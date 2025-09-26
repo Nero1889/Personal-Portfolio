@@ -54,7 +54,7 @@
     width: 2.5rem;
     height: 2.5rem;
     object-fit: contain;
-    background-color: var(--lang-bx);
+    background-color: var(--bx);
     padding: 20px;
     border-radius: 10px;
     border: 1px solid var(--lang-border);
