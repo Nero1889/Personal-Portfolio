@@ -3,287 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development Portfolio</title>
-    <link rel="icon" href="images/ViteLogo.png">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/header.css">
-    <link rel="stylesheet" href="stylesheets/utils.css">
-    <link rel="stylesheet" href="stylesheets/hero.css">
-    <link rel="stylesheet" href="stylesheets/about.css">
-    <link rel="stylesheet" href="stylesheets/services.css">
-    <link rel="stylesheet" href="stylesheets/work.css">
-    <link rel="stylesheet" href="stylesheets/contact.css">
-    <link rel="stylesheet" href="stylesheets/footer.css">
-    <link rel="stylesheet" href="stylesheets/mobile-nav.css">
+    <title>Neat Fades Barbershop</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/home-bg.css">
 </head>
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <ul class="header-menu">
-                <li><a class="header-link" href="#about">About</a></li>
-                <li><a class="header-link" href="#services">Services</a></li>
-                <li><a class="header-link" href="#work">Work</a></li>
-                <li><a class="header-link" href="#contact">Contact</a></li>
-                <li id="header-line"></li>
-                <li title="Change Theme!">
-                    <img id="sun" class="theme-toggle" src="images/sun.png"
-                    alt="Light Theme Icon" draggable="false">
-                </li>
-                <li>
-                    <a  class="resume-btn btns"
-                    href="public/Personal Resume - Raul Luna.pdf" target="_blank"
-                    rel="noopener noreferrer">Resume</a>
-                </li>
-            </ul>
-            <img id="header-bars" src="images/menu.png" alt="Menu Icon"
-            draggable="false">
-        </nav>
-    </header>
-    <!-- Movile Navigation -->
-    <div id="mobile-nav">
-        <nav>
-            <ul id="mobile-nav-menu">
-                <li><a class="mobile-link" href="#about">About</a></li>
-                <li><a class="mobile-link" href="#services">Services</a></li>
-                <li><a class="mobile-link" href="#work">Work</a></li>
-                <li><a class="mobile-link" href="#contact">Contact</a></li>
-                <li id="mobile-nav-line"></li>
-                <li>
-                    <img id="mobile-sun" class="theme-toggle" src="images/sun.png"
-                    alt="Light Theme Icon" draggable="false">
-                </li>
-                <li>
-                    <a class="resume-btn btns"
-                    href="public/Personal Resume - Raul Luna.pdf" target="_blank"
-                    rel="noopener noreferrer">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!-- End of Movile Navigation -->
-    <main>
-        <section class="hero container">
-            <img id="hero-img" src="images/selfImage.jpg" alt="Profile Picture">
-            <h2 id="hero-subtitle">Hi, I'm Alexis!</h2>
-            <!-- Front-End Web Developer -->
-            <h1 id="hero-title">
-                <span>F</span><span>R</span><span>O</span><span>N</span><span>T</span><span>-</span><span>E</span><span>N</span><span>D</span>
-                <br><span>W</span><span>E</span><span>B</span>
-                <span>D</span><span>E</span><span>V</span><span>E</span><span>L</span><span>O</span><span>P</span><span>E</span><span>R</span>
-            </h1>
-            <p id="hero-desc">A creative <strong>Web Developer</strong>, fascinated by 
-            <strong>Computer Science,</strong> determined to build amazing and dynamic
-            websites from start to launch!</p>
-            <a id="hero-btn" class="btns" href="mailto:mceclipse1889@gmail.com">
-            Reach out</a>
-        </section>
-        <section id="about" class="about container section">
-            <div id="about-content">
-                <h2 id="about-title">About</h2>
-                <p class="about-desc">Hello! I'm Alexis, a <strong>Junior Web 
-                Developer</strong> based in Madison, Wisconsin. I'm a hungry learner,
-                always wanting to learn more, take in the ideas of others, and adapting
-                them to create beautiful websites.</p>
-                <p class="about-desc">There's something to me very fascinating and 
-                expressive about <strong>UI/UX design</strong> and being able to create
-                something from your own personal experience.</p>
-                <p class="about-desc">I'm also entirely self taught! Just pure dedication
-                and determination!</p>
-                <hr id="about-hr">
-                <h3 id="about-subtitle">Skills:</h3>
-                <div id="about-ul-container">
-                    <ul id="about-ul">
-                        <li class="about-list">HTML5</li>
-                        <li class="about-list">CSS3</li>
-                        <li class="about-list">JavaScript (ES6+)</li>
-                        <li class="about-list">Vite</li>
-                    </ul>
-                    <ul id="about-ul">
-                        <li class="about-list">ReactJS</li>
-                        <li class="about-list">Figma</li>
-                        <li class="about-list">Tailwind CSS</li>
-                    </ul>
+<body id="home">
+    <header class="flex justify-end mt-[2rem]">
+        <!-- Mobile Navigation -->
+        <div class="md:hidden">
+            <div class="overlay">
+                <div class="flex items-center justify-between w-[100vw] mt-[2.0rem]">
+                    <h1 class="text-[var(--bg)] text-3xl  ml-[2.04rem] title">✺ Menu</h1>
+                    <img id="close-btn" src="/public/icons/close.png" alt="Close Icon" class="w-[3rem]
+                    h-[3rem] mr-[2.04rem] cursor-pointer" draggable="false">
                 </div>
-            </div>
-            <div id="about-img-wrapper">
-                <img id="about-img" data-src="images/SecondaryProfilePicture.jpg"
-                alt="Secondary Profile
-                Picture" class="lazy loading">
-            </div>
-        </section>
-        <div id="langs">
-            <img class="lang-img" src="images/slateHTML.png" alt="Slate HTML Logo"
-            draggable="false">
-            <img class="lang-img" src="images/slateCSS.png" alt="Slate CSS Logo"
-            draggable="false">
-            <img class="lang-img" src="images/slateJavaScript.png"
-            alt="Slate JavaScript Logo" draggable="false">
-            <img class="lang-img" src="images/slateVite.png" alt="Slate Vite Logo"
-            draggable="false">
-            <img class="lang-img" src="images/slateFigma.png" alt="Slate Figma Logo"
-            draggable="false">
-            <img class="lang-img" src="images/slateReact.png" alt="Slate React Logo"
-            draggable="false">
-            <img class="lang-img" src="images/slateTailwindCSS.png"
-            alt="Slate Tailwind Logo" draggable="false">
+                <div class="mt-[2rem] bg-[var(--gray)] w-[100%] h-[1px]"></div>
+                <ol class="mt-[2rem] flex flex-col gap-5 w-[100vw] px-[2.5rem] text-xl font-[normal]">
+                    <li class="text-[var(--bg)]"><a href="index.html">Home</a></li>
+                    <li class="text-[var(--bg)]"><a href="services.html">Services</a></li>
+                    <li class="text-[var(--bg)]"><a href="barbers.html">Barbers</a></li>
+                    <li class="text-[var(--bg)]"><a href="hours.html">Hours</a></li>
+                </ol>
+                <h3 class="text-[var(--gray)] text-sm mt-[25rem]">Neat Fades Barbershop</h3>
+            </div> 
+            <nav class="mr-[2rem]">
+                <img id="mobile-nav" src="/public/icons/menu.png" alt="Menu Icon"
+                class="w-[3rem] h-[3rem] cursor-pointer" draggable="false">
+            </nav>
         </div>
-        <section id="services" class="services container section">
-            <div id="services-container">
-                <h3 id="services-subtitle">Web-Dev Freelancing!</h3>
-                <h1 id="services-title">Services</h1>
-                <p id="services-desc">Here are some of the main services I offer as a 
-                Freelance Web Developer. From small additional features to building
-                entire websites, I'm up for it!</p>
-            </div>
-            <div id="services-card-container">
-                <div class="service-card">
-                    <img class="service-card-icon" src="images/laptop.png"
-                    alt="Laptop Icon" draggable="false">
-                    <h2 class="service-card-title">Website Design and Development</h2>
-                    <p class="service-card-desc">From <strong>Landing Pages to full
-                    Front-End Websites</strong>, Im happy to help! Whether it's starting
-                    or bringing a design to life, my priority is making your Website
-                    responsive and pixel perfect to your vision.</p>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block mr-[3rem] mt-[1.5rem] xl:mr-[5rem]">
+            <ol class="flex gap-7 lg:gap-10">
+                <li class="text-[var(--txt)]"><a href="index.html">Home</a></li>
+                <li class="text-[var(--txt)]"><a href="services.html">Services</a></li>
+                <li class="text-[var(--txt)]"><a href="barbers.html">Barbers</a></li>
+                <li class="text-[var(--txt)]"><a href="hours.html">Hours</a></li>
+            </ol>
+        </div>
+    </header>
+    <main>
+        <section class="mt-[5.5rem] bg-[var(--txt)] sm:mt-[7rem] lg:mt-[12rem]">
+            <div class="flex flex-col items-center justify-center bg-[var(--bg)]
+            pb-[5.5rem] rounded-b-[2rem] sm:items-start sm:pl-[5rem] lg:pl-[7rem]">
+                <div class="flex items-center justify-center gap-3.5">
+                    <p>Est. 2020</p>
+                    <img src="public/icons/scissors.png" alt="Scissors Icon"
+                    draggable="false" class="w-[1rem] h-[1rem]">
                 </div>
-                <div class="service-card">
-                    <img class="service-card-icon" src="images/wrench.png"
-                    alt="Wrench Icon" draggable="false">
-                    <h2 class="service-card-title">Website Fixes and Improvement</h2>
-                    <p class="service-card-desc">Big or small, from <strong>unforeseen
-                    bugs to increasing performance</strong>, adding new features or
-                    making a website responsive... I've got you covered!</p>
-                </div>
-                <div class="service-card">
-                    <img class="service-card-icon" src="images/paint.png"
-                    alt="Paint Icon" draggable="false">
-                    <h2 class="service-card-title">UI/UX Enhancements</h2>
-                    <p class="service-card-desc">If you'd like a complete <strong>
-                    overhaul to your Website or Landing Page</strong>, I'd be able to
-                    help you out bring your desired page to life!</p>
-                </div>
-                <div class="service-card">
-                    <img class="service-card-icon" src="images/api.png" alt="API Icon"
-                    draggable="false">
-                    <h2 class="service-card-title">
-                        API Integration and Dynamic Features
-                    </h2>
-                    <p class="service-card-desc">If you're looking for something more
-                    advanced or technical, then you've come to the right place! I've
-                    worked with API's on many occacions and would be more than happy to
-                    <strong>integrate an existing API!</strong></p>
-                </div>
-            </div>
-        </section>
-        <section id="work" class="work container section">
-            <h2 id="work-title">Projects</h2>
-            <p id="work-desc">Here are some of the projects I've recently worked on from
-            my own personal experience, feel free to explore!</p>
-            <div id="work-container">
-                <!-- Project 1 -->
-                <h3 id="work-project-title">Webflix</h3>
-                <div class="work-img-wrapper work-image1">
-                    <img data-src="images/webflix.png"
-                    alt="Webflix" class="lazy loading">
-                </div>
-                <div class="work-project work-content1">
-                    <h3 id="work-project-subtitle">Webflix</h3>
-                    <p id="work-project-desc1">Fetch movie, show and actor data from
-                    Webflix's search bar with modern UI/UX design!
+                <h1 class="text-5xl title text-center text-[var(--txt)] w-[9ch]
+                sm:w-[15ch] sm:text-left lg:text-6xl xl:text-7xl">Neat Fades Barbershop</h1>
+                <p class="mt-[2rem] text-base text-center w-[30ch] text-[var(--txt)]
+                sm:text-left lg:text-lg xl:text-xl">Delivering precision,
+                professionalism, and style in every cut.</p>
+                <div class="mt-[5rem] mr-[10rem] text-base flex flex-col gap-10
+                sm:flex-row sm:gap-20 lg:text-lg">
+                    <p>Based in<br>
+                        <span class="font-semibold">Madison, WI</span>
                     </p>
-                    <p id="work-project-desc2">Webflix is a modern Movie API-based
-                    project that puts user experience, functionality and design first.
-                    Combining both React and Tailwind CSS for a gorgeous website.</p>
-                    <a id="work-project-btn" class="btns" 
-                    href="https://webflix-njeqv1xsw-raul-lunas-projects-7398381e.vercel.app/"
-                    target="_blank">Visit Website!</a>
-                </div>
-                <!-- Project 2 -->
-                <h3 id="work-project-title">Comet Weather</h3>
-                <div class="work-img-wrapper work-image2">
-                    <img data-src="images/cometWeather.png"
-                    alt="Comet Weather" class="lazy loading">
-                </div>
-                <div class="work-project work-content2">
-                    <h3 id="work-project-subtitle">Comet Weather</h3>
-                    <p id="work-project-desc1">Fetch weather data from ANY city based on
-                    your query from the search bar, Google-Style!</p>
-                    <p id="work-project-desc2">Every last element is dynamically and 
-                    sleekly designed. Everything from the temperature to a 5-day forecast
-                    will be displayed at your request, based on your query in an 
-                    instant!</p>
-                    <a id="work-project-btn" class="btns" 
-                    href="https://nero1889.github.io/Project-4---Comet-Weather/"
-                    target="_blank">Visit Website!</a>
-                </div>
-                <!-- Project 3 -->
-                <h3 id="work-project-title">Neat Fades Barbershop</h3>
-                <div class="work-img-wrapper work-image3">
-                    <img data-src="images/neatFadesBarbershop.png" alt="Neat Fades
-                    Barbershop" class="lazy loading">
-                </div>
-                <div class="work-project work-content3">
-                    <h3 id="work-project-subtitle">Neat Fades Barbershop</h3>
-                    <p id="work-project-desc1">This project is based on a real local
-                    business in Madison!
-                    <p id="work-project-desc2">Neat Fades Barbershop is a small business
-                    established in 2020 (by my cousin, believe it or not!), the website
-                    reflects it's real world counterpart location, sleek, sharp and
-                    modern.</p>
-                    <a id="work-project-btn" class="btns"
-                    href="https://nero1889.github.io/Project-2---Neat-Fades-Barbershop/"
-                    target="_blank">Visit Website!</a>
-                </div>
-                <!-- Project 4 -->
-                <h3 id="work-project-title">GeoGo</h3>
-                <div class="work-img-wrapper work-image4">
-                    <img data-src="images/geoGo.png"
-                    alt="GeoGo" class="lazy loading">
-                </div>
-                <div class="work-project work-content4">
-                    <h3 id="work-project-subtitle">GeoGo</h3>
-                    <p id="work-project-desc1">A modern website powered by React, 
-                    including a theme toggle and dynamic loading animations.</p>
-                    <p id="work-project-desc2">This is my first React-Based project! 
-                    Created for a fictional travel agency-like website.</p>
-                    <a id="work-project-btn" class="btns" 
-                    href="https://project-5-geo-43t3lyos1-raul-lunas-projects-7398381e.vercel.app/"
-                    target="_blank">Visit Website!</a>
+                    <p>Owned By<br>
+                        <span class="font-semibold">Edilberto Luna</span>
+                    </p>
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact container section">
-            <h2 id="contact-title">Get In Contact</h2>
-            <p id="contact-desc">Regardless of your scenario, whether it's starting a new 
-            project or having questions about my availability, don't hesitate to reach 
-            out! Let's get in contact.</p>
-            <a class="contact-btn btns" href="mailto:mceclipse1889@gmail.com"
-            target="_blank">Reach Out
-            </a>
+        <section id="our-work-container" class="bg-[var(--txt)] min-h-[300vh] relative">
+            <div id="our-work-sticky" class="sticky top-0 h-screen flex flex-col
+            items-center justify-center overflow-hidden">
+                <h1 class="text-[var(--bg)] mt-[2.5rem] text-5xl title w-[100%] text-center
+                sm:text-left sm:pl-[5rem] md:text-6xl md:mt-[5rem] md:mb-[1rem]
+                lg:text-7xl">✺ Our Work</h1>
+                <div id="image-scroll-track" class="mt-[2rem] mb-[10rem] flex flex-row
+                gap-7 whitespace-nowrap md:gap-10 xl:gap-14">
+                    <img src="/public/galleryImg2.jpg" alt="Gallery Image"
+                    class="w-[17rem] rounded-3xl ml-[3rem] sm:w-[20rem] lg:w-[25rem]
+                    xl:w-[30rem] lazy-loading">
+                    <img src="/public/galleryImg8.jpg" alt="Gallery Image"
+                    class="w-[17rem] rounded-3xl sm:w-[20rem] lg:w-[25rem]
+                    xl:w-[30rem] lazy-loading">
+                    <img src="/public/galleryImg4.jpg" alt="Gallery Image"
+                    class="w-[17rem] rounded-3xl sm:w-[20rem] lg:w-[25rem]
+                    xl:w-[30rem] lazy-loading">
+                    <img src="/public/galleryImg5.jpg" alt="Gallery Image"
+                    class="w-[17rem] rounded-3xl sm:w-[20rem] lg:w-[25rem]
+                    xl:w-[30rem] lazy-loading">
+                    <img src="/public/barbersImgB6.png" alt="Gallery Image"
+                    class="w-[17rem] rounded-3xl sm:w-[20rem] lg:w-[25rem]
+                    xl:w-[30rem] lazy-loading">
+                    <img src="/public/barbersImgB2.png" alt="Gallery Image"
+                    class="w-[17rem] rounded-3xl sm:w-[20rem] lg:w-[25rem]
+                    xl:w-[30rem] lazy-loading">
+                    <img src="/public/barbersImgA5.png" alt="Gallery Image"
+                    class="w-[17rem] rounded-3xl sm:w-[20rem] lg:w-[25rem]
+                    xl:w-[30rem] lazy-loading">
+                </div>
+            </div>
+        </section>
+        <section class="mt-[4rem] flex flex-col items-center justify-center mx-[5rem]
+        md:mt-[7rem] md:mb-[7rem] md:flex-row md:gap-20 lg:mt-[10rem] lg:mb-[12rem]
+        xl:mt-[12rem] xl:mb-[10rem] xl:gap-30 2xl:gap-50">
+            <div>
+                <div class="w-[100%] flex flex-col items-center sm:items-start
+                md:w-[auto]">
+                    <h1 class="text-5xl title lg:text-6xl xl:text-7xl">About</h1>
+                    <div class="mt-[1rem] bg-[var(--gray)] w-[17rem] h-[1px]"></div>
+                </div>
+                <p class="mt-[2rem] text-base min-w-[30ch] md:w-[10ch] lg:w-[40ch]
+                lg:text-lg xl:w-[55ch] 2xl:text-xl">Local Madison
+                <span class="font-semibold">Barber Eddie Luna</span> has worked hard to
+                maintain and establish his very own business, Neat Fades Barbershop, here
+                in his hometown of Madison, WI. Against the odds of opening during the
+                COVID-19 pandemic in 2020.</p>
+                <p class="mt-[2rem] text-base min-w-[30ch] md:w-[10ch] lg:w-[40ch]
+                lg:text-lg xl:w-[55ch] 2xl:text-xl">We offer a full range of grooming
+                services, from meticulous beard trims and traditional straight razor
+                shaves, to personalized <span class="font-semibold"> styling tailored to
+                your hair type and preferences.</span></p>
+            </div>
+            <div>
+                <img src="public/storyImg.png" alt="Eddie Luna" class="mt-[2rem]
+                w-[15rem] rounded-[1.25rem] xl:w-[17rem] 2xl:w-[22rem]">
+                <p class="text-[var(--gray)] mt-[.5rem]">Owner - Eddie Luna</p>
+            </div>
+        </section>
+        <section class="mt-[4rem] flex flex-col items-center justify-center
+        bg-[var(--white)] pb-[5rem]">
+            <h1 class="mt-[4rem] text-5xl title">Amenities</h1>
+            <div class="mt-[2rem] mx-[5rem] flex flex-col gap-7">
+                <div class="bg-[var(--bg)] p-7 rounded-[1.5rem] flex flex-col items-center">
+                    <h1 class="font-semibold text-lg text-left w-[100%]">
+                        Appointments
+                    </h1>
+                    <div class="mt-[1rem] mb-[1rem] bg-[var(--gray)] w-[100%] h-[1px]"></div>
+                    <p class="w-[25ch] text-base">Walk-in appointments are welcome!
+                    However we encourage you to schedule one in advance! If you need to
+                    cancel your appointment, please do so two hours in advance in order
+                    to avoid being put on the list of no-show or no-call.</p>
+                </div>
+                <div class="bg-[var(--bg)] p-7 rounded-[1.5rem] flex flex-col items-center">
+                    <h1 class="font-semibold text-lg text-left w-[100%]">Services</h1>
+                    <div class="mt-[1rem] mb-[1rem] bg-[var(--gray)] w-[100%] h-[1px]"></div>
+                    <p class="w-[25ch] text-base">Wi-Fi, TV, Vending Machine, Quality
+                    Seats, Mirrors, ATM machine, lighting and additional equipment.</p>
+                </div>
+                <div class="bg-[var(--bg)] p-7 rounded-[1.5rem] flex flex-col items-center">
+                    <h1 class="font-semibold text-lg text-left w-[100%]">
+                        Special Instructions
+                    </h1>
+                    <div class="mt-[1rem] mb-[1rem] bg-[var(--gray)] w-[100%] h-[1px]"></div>
+                    <p class="w-[25ch] text-base">You may want to bring pictures, videos,
+                    or anything else that could assist in describing the haircut style
+                    you want!</p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="footer container section">
-        <h3 id="footer-title">Alexis Luna - 2024</h3>
-        <div id="footer-container">
-            <a class="footer-link" href="https://github.com/Nero1889" target="_blank">
-                <img src="images/gitHub.png" alt="GitHub Logo" title="My GitHub!"
-                draggable="false">
-            </a>
-            <a class="footer-link"
-            href="https://www.upwork.com/freelancers/~0120f58ce455e13388"
-            target="_blank">
-                <img src="images/upwork.png" alt="Upwork Logo" title="My Upwork!"
-                draggable="false">
-            </a>
-            <a class="footer-link"
-            href="https://www.linkedin.com/in/alexis-luna-249325329/" target="_blank">
-                <img src="images/linkedIn.png" alt="LinkedIn Logo" title="My LinkedIn!"
-                draggable="false">
-            </a>
+    <footer class="bg-[var(--txt)] pt-[3rem] pb-[1.5rem] rounded-t-[2rem]">
+        <div class="ml-[3rem]">
+            <p class="text-[var(--gray)] text-base w-[20ch]">Looking to schedule an appointment?</p>
+            <h1 class="text-[var(--bg)] text-4xl title w-[10ch] mt-[.5rem] mb-[1.5rem]">
+                ✺ Let's Get in Contact.
+            </h1>
+            <p class="text-[var(--bg)] text-base">Neatfadesbarbershop@gmail.com</p>
+            <p class="text-[var(--bg)] text-base">(608) 501-5444</p>
         </div>
-        <script src="js-docs/main.js"></script>
-        <script src="js-docs/dark-mode.js"></script>
-        <script src="js-docs/animations.js"></script>
+        <div class="flex flex-col items-center justify-center mx-[2rem]">
+            <div class="mt-[5rem] mb-[1rem] bg-[var(--gray)] w-[100%] h-[1px]"></div>
+            <div class="flex items-center justify-between gap-5 w-[100%]">
+                <p class="text-[var(--gray)]">Alexis Luna - 2025</p>
+                <div class="flex gap-2">
+                    <img class="w-[2rem] cursor-pointer" src="public/icons/grayGitHub.png" alt="Logo">
+                    <img class="w-[2rem] cursor-pointer" src="public/icons/grayGmail.png" alt="Logo">
+                    <img class="w-[2rem] cursor-pointer" src="public/icons/grayLinkedIn.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <script src="/src/main.js"></script>
     </footer>
 </body>
 </html>
-
