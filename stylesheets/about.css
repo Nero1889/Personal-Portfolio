@@ -43,22 +43,6 @@
     content: "";
     margin-left: 0.5em;
 }
-#langs {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.lang-img {
-    width: 2.5rem;
-    height: 2.5rem;
-    object-fit: contain;
-    background-color: var(--bx);
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid var(--lang-border);
-}
 
 /* xs = (extra small) */
 @media (min-width: 475px) {
@@ -86,9 +70,13 @@
 @media (min-width: 640px) {
     #about-img-wrapper {
         margin: 0 auto;
+        perspective: 2005px;
     }
     #about-img {
         width: 28.6875rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        transform-style: preserve-3d;
+        will-change: transform;
     }
 }
 
