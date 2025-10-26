@@ -1,15 +1,3 @@
-import "../styles/modern-normalize.css";
-import "../styles/style.css";
-import "../styles/header.css";
-import "../styles/hero.css";
-import "../styles/about.css";
-import "../styles/work.css";
-import "../styles/services.css";
-import "../styles/contact.css";
-import "../styles/footer.css";
-import "../styles/mobile-nav.css";
-import "../styles/utils.css";
-
 /* Mobile Navigation */
 const MENU = document.querySelector(".header-bars");
 const MOBILE_NAV = document.querySelector(".mobile-nav");
@@ -35,4 +23,3 @@ LINKS.forEach(link => {
         document.body.style.overflowY = "auto";
     });
 });
-
